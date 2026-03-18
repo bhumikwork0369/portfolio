@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhumik Thakkar | Flutter Developer</title>
+  <meta name="description"
+    content="Portfolio of Bhumik Thakkar – Flutter Developer specializing in mobile app development with Dart, Firebase, and REST APIs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Particle Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>BT<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-greeting">👋 Hello, I'm</div>
+      <h1 class="hero-name">Bhumik Thakkar</h1>
+      <div class="hero-role">
+        <span class="role-prefix">I'm a </span>
+        <span class="typed-text" id="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-bio">
+        A passionate Flutter Developer crafting beautiful, high-performance mobile experiences.
+        Currently pursuing M.Sc. IT at CHARUSAT, building apps that make a difference.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">4+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-avatar-ring outer-ring">
+        <div class="hero-avatar-ring middle-ring">
+          <div class="hero-avatar-ring inner-ring">
+            <div class="hero-avatar">
+              <span class="avatar-initials">BT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Floating tech badges -->
+      <div class="tech-badge badge-flutter">Flutter</div>
+      <div class="tech-badge badge-dart">Dart</div>
+      <div class="tech-badge badge-firebase">Firebase</div>
+      <div class="tech-badge badge-git">Git</div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar">BT</div>
+            <div class="about-avatar-glow"></div>
+          </div>
+          <div class="about-badges">
+            <span class="about-badge">📍 Anand, Gujarat</span>
+            <span class="about-badge">🎓 M.Sc. IT</span>
+            <span class="about-badge">📱 Flutter Dev</span>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="about-text">
+            Hi! I'm <strong>Bhumik Thakkar</strong>, a dedicated <strong>Flutter Developer</strong> from Anand, Gujarat,
+            India.
+            I have a strong foundation in mobile application development using Flutter and Dart, backed by hands-on
+            experience with Firebase, REST APIs, and modern development tools.
+          </p>
+          <p class="about-text">
+            Currently pursuing my <strong>Master of Science in Information Technology</strong> at CMPICA / Charotar
+            University of
+            Science & Technology (CHARUSAT), I combine academic knowledge with real-world project experience to build
+            meaningful digital products.
+          </p>
+          <p class="about-text">
+            Beyond coding, I enjoy playing <strong>badminton and chess</strong> — games that sharpen my strategic
+            thinking and
+            teamwork, qualities I bring into every project I work on.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <span class="info-label">Email</span>
+                <a href="mailto:bhumikwork0@gmail.com" class="info-value">bhumikwork0@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📱</span>
+              <div>
+                <span class="info-label">Phone</span>
+                <span class="info-value">+91 7984113926</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🌐</span>
+              <div>
+                <span class="info-label">LinkedIn</span>
+                <a href="https://linkedin.com" target="_blank" class="info-value">linkedin.com/in/bhumik</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💻</span>
+              <div>
+                <span class="info-label">GitHub</span>
+                <a href="https://github.com" target="_blank" class="info-value">github.com/bhumik</a>
+              </div>
+            </div>
+          </div>
+          <div class="strength-chips">
+            <div class="strength-chip">🚀 Quick Learner</div>
+            <div class="strength-chip">🧠 Problem Solver</div>
+            <div class="strength-chip">🤝 Team Player</div>
+            <div class="strength-chip">⏱️ Time Manager</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Primary Skills -->
+        <div class="skill-category reveal">
+          <h3 class="category-title">📱 Mobile Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon flutter-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.5 6L30 6L16.5 19.5L13.5 6Z" fill="#47C5FB" />
+                  <path d="M13.5 6L27 19.5L13.5 33L0 19.5L13.5 6Z" fill="#47C5FB" opacity="0" />
+                  <path d="M16.5 19.5L30 6H43.5L30 19.5H16.5Z" fill="#47C5FB" />
+                  <path d="M16.5 28.5L30 42H43.5L30 28.5H16.5Z" fill="#00569E" />
+                  <path d="M16.5 19.5L30 19.5L43.5 33L30 33L16.5 19.5Z" fill="#00B4FF" />
+                  <path d="M16.5 28.5L30 28.5L43.5 33L30 33L16.5 28.5Z" fill="#47C5FB" opacity="0.8" />
+                </svg>
+              </div>
+              <span class="skill-name">Flutter</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon dart-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 7L28 7L41 20V41L7 41L7 7Z" fill="#01579B" />
+                  <path d="M28 7L41 20H28V7Z" fill="#027DCD" />
+                  <path d="M13 17H27M13 23H35M13 29H35M13 35H27" stroke="white" stroke-width="2"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+              <span class="skill-name">Dart</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon android-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 22C9 16.477 13.477 12 19 12H29C34.523 12 39 16.477 39 22V36H9V22Z" fill="#3DDC84" />
+                  <rect x="6" y="22" width="4" height="10" rx="2" fill="#3DDC84" />
+                  <rect x="38" y="22" width="4" height="10" rx="2" fill="#3DDC84" />
+                  <rect x="17" y="36" width="4" height="6" rx="2" fill="#3DDC84" />
+                  <rect x="27" y="36" width="4" height="6" rx="2" fill="#3DDC84" />
+                  <circle cx="19" cy="20" r="1.5" fill="white" />
+                  <circle cx="29" cy="20" r="1.5" fill="white" />
+                </svg>
+              </div>
+              <span class="skill-name">Android Studio</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Cloud -->
+        <div class="skill-category reveal">
+          <h3 class="category-title">☁️ Backend & Cloud</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon firebase-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 40L19 8L26 22L10 40Z" fill="#FFA000" />
+                  <path d="M10 40L26 22L33 30L10 40Z" fill="#F57C00" />
+                  <path d="M26 22L19 8L38 40L26 22Z" fill="#FFCA28" />
+                  <path d="M10 40L38 40L33 30L10 40Z" fill="#FFA000" opacity="0.6" />
+                </svg>
+              </div>
+              <span class="skill-name">Firebase</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon rest-icon">🔗</div>
+              <span class="skill-name">REST APIs</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon java-icon">☕</div>
+              <span class="skill-name">Java</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web & Tools -->
+        <div class="skill-category reveal">
+          <h3 class="category-title">🌐 Web & Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon html-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 6L10.5 36L24 40L37.5 36L40 6H8Z" fill="#E34F26" />
+                  <path d="M24 37.5L34.5 34.5L37.5 8.5H24V37.5Z" fill="#EF652A" />
+                  <path d="M13.5 14H24V20H20L20.5 24H24V30H15.5L13.5 14Z" fill="white" />
+                  <path d="M24 14H34.5L34 20H24V14Z" fill="white" />
+                  <path d="M24 24H33.5L32.5 30L24 32.5V26.5" fill="white" />
+                </svg>
+              </div>
+              <span class="skill-name">HTML</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon css-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 6L10.5 36L24 40L37.5 36L40 6H8Z" fill="#1572B6" />
+                  <path d="M24 37.5L34.5 34.5L37.5 8.5H24V37.5Z" fill="#33A9DC" />
+                  <path d="M18 20H30M17 26H25L25.5 22H24M17.5 32H24" stroke="white" stroke-width="2"
+                    stroke-linecap="round" />
+                  <path d="M17 14H31" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <span class="skill-name">CSS</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="72"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon git-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="18" fill="#F05032" />
+                  <path
+                    d="M36 22.586L25.414 12L23.172 14.242L26.929 18H16.5C14.567 18 13 19.567 13 21.5V26.5C13 28.433 14.567 30 16.5 30H18V28H16.5C15.672 28 15 27.328 15 26.5V21.5C15 20.672 15.672 20 16.5 20H26.929L23.172 23.758L25.414 26L36 22.586Z"
+                    fill="white" />
+                  <circle cx="32" cy="32" r="3" fill="white" />
+                </svg>
+              </div>
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="83"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IDE & Soft Skills -->
+        <div class="skill-category reveal">
+          <h3 class="category-title">🛠️ IDE & Soft Skills</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon vscode-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M34 6L14 24L34 42L42 36L26 24L42 12L34 6Z" fill="#0065A9" />
+                  <path d="M14 24L6 30V18L14 24Z" fill="#007ACC" />
+                  <path d="M34 6L26 24L34 42L42 36L26 24L42 12L34 6Z" fill="#1F9CF0" opacity="0.5" />
+                </svg>
+              </div>
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon collab-icon">🤝</div>
+              <span class="skill-name">Team Collaboration</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="92"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon problem-icon">🧠</div>
+              <span class="skill-name">Problem Solving</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: GroceryKart — Premium Showcase Card -->
+        <div class="salon-showcase reveal" id="proj-grocery">
+          <div class="salon-glow-1"></div>
+          <div class="salon-glow-2"></div>
+
+          <!-- LEFT: Content Panel -->
+          <div class="salon-content">
+            <div class="salon-labels">
+              <span class="salon-chip featured-chip">⭐ Featured Project</span>
+              <span class="salon-chip stack-chip">Flutter + Firebase</span>
+            </div>
+            <h3 class="salon-title">GroceryKart</h3>
+            <p class="salon-subtitle">Your Smart Grocery Shopping Companion</p>
+            <p class="salon-desc">
+              A full-featured grocery e-commerce mobile app built with Flutter, delivering a fast,
+              smooth, and native-feeling shopping experience. Browse thousands of products, manage
+              your cart, place orders, and track deliveries — all in one beautifully designed app.
+            </p>
+            <ul class="salon-features-list">
+              <li>
+                <span class="sfl-icon">🛍️</span>
+                <div>
+                  <strong>Product Catalog</strong>
+                  <span>Browse grocery items by category with search &amp; filters</span>
+                </div>
+              </li>
+              <li>
+                <span class="sfl-icon">🛒</span>
+                <div>
+                  <strong>Cart &amp; Checkout</strong>
+                  <span>Manage cart, apply offers &amp; place orders seamlessly</span>
+                </div>
+              </li>
+              <li>
+                <span class="sfl-icon">📦</span>
+                <div>
+                  <strong>Order Tracking</strong>
+                  <span>Real-time order status from placement to delivery</span>
+                </div>
+              </li>
+              <li>
+                <span class="sfl-icon">👤</span>
+                <div>
+                  <strong>User Profiles</strong>
+                  <span>Saved addresses, order history &amp; preferences</span>
+                </div>
+              </li>
+            </ul>
+            <div class="salon-tech-row">
+              <span class="salon-tech-pill">Flutter</span>
+              <span class="salon-tech-pill">Dart</span>
+              <span class="salon-tech-pill">Firebase</span>
+              <span class="salon-tech-pill">REST API</span>
+              <span class="salon-tech-pill">Provider</span>
+            </div>
+            <div class="salon-actions">
+              <a href="#" class="btn btn-primary salon-btn">View on GitHub →</a>
+            </div>
+          </div>
+
+          <!-- RIGHT: Phone Mockup Visual -->
+          <div class="salon-visual">
+            <div class="phone-mockup">
+              <div class="phone-frame">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="app-ui">
+                    <div class="app-header-bar">
+                      <span class="app-logo-text">🛒 GroceryKart</span>
+                      <span>🛍️</span>
+                    </div>
+                    <div class="app-search">🔍 Search products...</div>
+                    <div class="app-section-label">🔥 Today's Deals</div>
+                    <div class="app-salon-card">
+                      <div class="asc-color" style="background:linear-gradient(135deg,#16a34a,#22d3ee)"></div>
+                      <div class="asc-info">
+                        <strong>Fresh Vegetables</strong>
+                        <span>🥦 Broccoli · Carrot · Spinach</span>
+                        <div class="asc-tags"><span>₹49/kg</span><span>-20%</span></div>
+                      </div>
+                    </div>
+                    <div class="app-salon-card">
+                      <div class="asc-color" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"></div>
+                      <div class="asc-info">
+                        <strong>Dairy &amp; Eggs</strong>
+                        <span>🥛 Milk · Curd · Butter</span>
+                        <div class="asc-tags"><span>₹85/L</span><span>Fresh</span></div>
+                      </div>
+                    </div>
+                    <div class="app-book-btn">Add to Cart 🛒</div>
+                    <div class="app-bottom-nav">
+                      <span class="abn-active">🏠</span>
+                      <span>🔍</span>
+                      <span>🛒</span>
+                      <span>👤</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="phone-stat stat-top">
+              <span class="pstat-icon">🛍️</span>
+              <div><strong>Products</strong><span>1000+ Items</span></div>
+            </div>
+            <div class="phone-stat stat-bottom">
+              <span class="pstat-icon">⚡</span>
+              <div><strong>Delivery</strong><span>Real-time Track</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: To-Do Manager -->
+        <div class="project-card reveal" id="proj-todo">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon todo-icon">✅</div>
+            <div class="project-meta">
+              <h3 class="project-title">To-Do Manager App</h3>
+              <span class="project-type">Productivity App · Jan 2025</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A Flutter-based task management application with a clean, structured UI. Implements state management
+            for seamless task creation, editing, and deletion with API integration for data persistence.
+          </p>
+          <div class="project-features">
+            <span class="feature">📝 Task CRUD</span>
+            <span class="feature">🔄 State Management</span>
+            <span class="feature">🌐 API Integration</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><span>GitHub</span> →</a>
+          </div>
+        </div>
+
+        <!-- Project 3: SalonWale -->
+        <div class="project-card reveal" id="proj-salon">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon salon-icon">💇</div>
+            <div class="project-meta">
+              <h3 class="project-title">SalonWale App</h3>
+              <span class="project-type">Full-Stack Mobile App</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A comprehensive salon booking &amp; management platform connecting customers with local salons.
+            Features real-time appointment booking, service browsing, push notifications, and a salon owner dashboard.
+          </p>
+          <div class="project-features">
+            <span class="feature">📅 Appointment Booking</span>
+            <span class="feature">🔔 Push Notifications</span>
+            <span class="feature">💼 Salon Dashboard</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><span>GitHub</span> →</a>
+          </div>
+        </div>
+
+
+        <!-- Project 4: Calculator -->
+        <div class="project-card reveal" id="proj-calc">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon calc-icon">🔢</div>
+            <div class="project-meta">
+              <h3 class="project-title">Calculator App</h3>
+              <span class="project-type">Utility App</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A clean, intuitive calculator application with support for standard arithmetic operations.
+            Features a modern UI design, smooth button animations, and accurate computation logic built in Flutter.
+          </p>
+          <div class="project-features">
+            <span class="feature">➕ Arithmetic Ops</span>
+            <span class="feature">🎨 Modern UI</span>
+            <span class="feature">⚡ Smooth Animations</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><span>GitHub</span> →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EDUCATION ====== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education &amp; <span class="gradient-text">Background</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge ongoing">In Progress</div>
+            <div class="timeline-icon">🎓</div>
+            <h3 class="timeline-degree">Master of Science in Information Technology</h3>
+            <p class="timeline-school">CMPICA / Charotar University of Science &amp; Technology (CHARUSAT)</p>
+            <div class="timeline-meta">
+              <span class="timeline-date">📅 Apr 2024 – Apr 2026</span>
+              <span class="timeline-location">📍 Anand, Gujarat, IN</span>
+            </div>
+            <p class="timeline-desc">Pursuing advanced studies in Information Technology with focus on software
+              development, mobile applications, and modern programming paradigms.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge completed">Completed</div>
+            <div class="timeline-icon">🏫</div>
+            <h3 class="timeline-degree">Bachelor of Computer Applications (BCA)</h3>
+            <p class="timeline-school">VP &amp; RPTP Science College / Sardar Patel University</p>
+            <div class="timeline-meta">
+              <span class="timeline-date">📅 Mar 2021 – Mar 2024</span>
+              <span class="timeline-location">📍 Anand, Gujarat, IN</span>
+              <span class="timeline-gpa">⭐ CGPA: 6.04 / 10</span>
+            </div>
+            <p class="timeline-desc">Gained comprehensive knowledge in computer applications, programming languages,
+              database management, and software development fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge completed">Completed</div>
+            <div class="timeline-icon">🏫</div>
+            <h3 class="timeline-degree">12th Standard – Commerce</h3>
+            <p class="timeline-school">DZ Patel Higher Secondary School</p>
+            <div class="timeline-meta">
+              <span class="timeline-date">📅 Mar 2021</span>
+              <span class="timeline-location">📍 Anand, Gujarat, IN</span>
+              <span class="timeline-gpa">📊 49%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon-wrap">📧</div>
+              <div>
+                <span class="contact-label">Email Me</span>
+                <a href="mailto:bhumikwork0@gmail.com" class="contact-value">bhumikwork0@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">📱</div>
+              <div>
+                <span class="contact-label">Call Me</span>
+                <a href="tel:+917984113926" class="contact-value">+91 7984113926</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">📍</div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Anand, Gujarat, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" class="social-btn linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" class="social-btn github">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+              class="form-input form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span id="btn-text">Send Message 🚀</span>
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+          <div class="form-error" id="form-error">
+            ❌ Oops! Something went wrong. Please try emailing me directly at <a href="mailto:bhumikwork0@gmail.com">bhumikwork0@gmail.com</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>BT<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">Crafted with ❤️ by <strong>Bhumik Thakkar</strong> | Flutter Developer</p>
+        <p class="footer-copy">© 2026 Bhumik Thakkar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK — sends real emails from the contact form -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
